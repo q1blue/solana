@@ -12,10 +12,10 @@ edition = "2018"
 bincode = "1.3.1"
 byteorder = "1.3.4"
 chrono = { version = "0.4.11", features = ["serde"] }
-crossbeam-channel = "0.4"
+crossbeam-channel = "0.5"
 dlopen_derive = "0.1.4"
 dlopen = "0.1.8"
-ed25519-dalek = "1.0.0-pre.4"
+ed25519-dalek = "3.0.0-pre.6"
 fs_extra = "1.1.0"
 itertools = "0.9.0"
 lazy_static = "1.4.0"
@@ -48,7 +48,7 @@ trees = "0.2.1"
 [dependencies.rocksdb]
 # Avoid the vendored bzip2 within rocksdb-sys that can cause linker conflicts
 # when also using the bzip2 crate
-version = "0.14.0"
+version = "0.24.0"
 default-features = false
 features = ["lz4"]
 
